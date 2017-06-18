@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>扫到什么，评论什么</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="./main_files/gxapppack.css" rel="stylesheet" type="text/css">    
+    <link href="./main_files/animate.css" rel="stylesheet" type="text/css">    
+	<script src="./main_files/hm.js.下载"></script>
+	<script src="./main_files/hm.js(1).下载"></script>
+	<script src="./main_files/jquery-1.10.1.min.js.下载"></script>
+    <script src="./main_files/clipboard.js.下载"></script>
+    <script>
+
+</script>
+    <script>
+    is_weixin();
+    function is_weixin() { 
+        var ua = window.navigator.userAgent.toLowerCase(); 
+        if (ua.match(/MicroMessenger/i) == 'micromessenger') { 
+            // $("#rs").text("微信浏览器"); 
+        } else { 
+            // $("#rs").text("不是微信浏览器"); 
+            //window.location.href = "";
+        } 
+    }
+    </script>
+    <style>
+		.buttonCopy{
+		
+		}
+        .guan{
+            position: absolute;
+            left: 10%;
+            width: 70%;
+            top: 30px;
+            text-align: center;
+            padding: 5%;
+            border: 1px solid #dedede;
+            box-shadow: 1px 1px 3px #ccc;
+            background: #f1f1f1;
+            display: none;
+        }
+        .guan img {
+            width: 100%;
+        }
+        .guan .close {
+            position: absolute;
+            right: 0;
+            top:0;
+            background: #f00;
+            color: #fff;
+            padding: 3px;
+        }
+        .adimg {
+            display: block;
+            width: 100%;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+        }
+        .adimg img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="content-outer">
+        <div class="content animated pulse">愿你永远有漂亮衣服。</div>
+    </div>
+    <div class="btn-group" style="display: block; bottom: 341.5px;">
+        <a class="btn btn-copy btn-copy-click" style="color:blue; text-align:center"></a>
+        <a class="btn btn-play" style="width: 725.688px; height: 149.406px; margin-top: 106.719px;"></a>
+    </div>
+</div>
+<div class="guan">
+    <span class="close"> X 关闭 </span>
+    <img src="./main_files/0.jpg">
+    <p>长按识别二维码<br>回复【扫码评论】</p>
+</div>
+    <div style="position: fixed;bottom: 0;left: 0;right: 0;line-height: 100px;text-align: center;">
+        <a href="public_num.html" style="text-decoration: none">好看的人都点了我&gt;&gt;&gt;</a>
+    </div>
+    
+<script>
+    var datar = [
+    "我养你啊",
+    "别把这个世界让给你鄙视的人",
+    "无论世界再怎么残酷，<br/>反正我都会一直在你身边。",
+    "你是我的梦想",
+    "来，<br/>我们床上聊",
+    "人生太苦，<br/>给你颗糖",
+    "以后我保护你",
+    "你为什么天天找我说话，<br/>想睡我吗？",
+    "你喜不喜欢我，<br/>不喜欢我我再想想办法。",
+    "有时很爱你，<br/>有时想一枪崩了你",
+    "跟我回家",
+    "青春荒唐不负你，<br/>全套包夜八百起。",
+    "趁着年轻多吃苦，<br/>这样你老了才能吃更多苦。",
+    "这座山上的一些都是我的，<br/>包括你。",
+    "世界是残酷的，<br/>但你比世界酷。",
+    "从此我爱的人都不像你。",
+    "我喜欢你，<br/>就像你妈打你，<br/>不讲道理。",
+    "不要变成自己曾经最讨厌的样子。",
+    "少吃点。",
+    "借我怦然心动如往昔。",
+    "愿你永远有漂亮衣服。",
+    "我一直都在。",
+    "有空一起睡觉啊？",
+    "你个磨人的小妖精。",
+    "傻蛋",
+    "我爱你。",
+    "明天请我吃饭。",
+    "想去你头上的草原抓羊。",
+    "不服啪啪啪",
+    "比你聪明的人都在努力，<br/>那你努力有什么用？",
+    "我见过无数流氓，<br/>却还是看不惯你个人渣。",
+    "你这个磨人的小妖精",
+    "陪你丑",
+    "趁着年轻多吃点苦，<br/>这样你老了才能吃更多苦",
+    "医生叫你进行光合作用，<br/>就不要熬夜了",
+    "你有多不正经，<br/>就有多情深",
+    "不要想着咸鱼翻身，<br/>翻了也还是咸鱼",
+    "不要抱怨那些击倒你的人，<br/>他们也许只是想让你知道，<br/>躺着其实也挺舒服的",
+    "岁月是把杀猪刀，<br/>也只是针对那些长得好看的人，<br/>对于你，<br/>那是一点办法也没有",
+    "我没有去过你的城市，<br/>但是我刷过你那的题",
+    "我们不要再见面了，<br/>洗头好累，<br/>洗发水好贵",
+    "你所有为人称道的美丽，<br/>都有美图秀秀的痕迹",
+    "据说，爱笑的女孩鱼尾纹都比较多",
+    "还是会想起那年夏天，<br/>你满身大汗的样子",
+    "待你长发及腰，<br/>放屁就能把头发吹起来了",
+    "建议你对自己的长相，<br/>理解为主<br/>欣赏为辅",
+    "陪你喝酒的人，<br/>注定无法送你回家，<br/>但是可以去开房",
+    "你不是真正的快乐，<br/>我是",
+    "我一直就很喜欢你！<br/>那你不直的时候呢？",
+    "“宝贝，我想给你整个世界”，<br/>“那你整吧”",
+    "在有生之年遇见你，<br/>竟花光了我所有的积蓄",
+    "别人笑起来很好看，<br/>但你不一样，<br/>你是看起来很好笑",
+    "以后的路你自己走，<br/>我打车",
+    "你现在不喜欢我，<br/>我告诉你，<br/>过了这个村，<br/>我在下个村等你",
+    "你会不会突然的出现，<br/>在街角的大保健",
+    "问：“如何撩汉”，<br/>答：“长得好看”",
+    "想陪在你身边，<br/>如果有人敢欺负你，<br/>我就能第一个鼓掌",
+    "如果你的前女友和现女友同时掉到河里，<br/>请问……<br/>我可以做你女朋友嘛",
+    "喜欢一个人就是，<br/>我发票圈你给你看的",
+    "我一定要追到你，<br/>不然我白长这么好看了",
+    "理想的男朋友应该像蚊子一样，<br/>一不留神就让你手上多个包",
+    "上帝不会亏待矫情的人，<br/>他都往死里整",
+    "希望一切事情都像长胖那么容易",
+    "你负责貌美如花，<br/>那我负责插花",
+    "总有一天你会遇到那个人，<br/>那个愿意陪你吃很多很多饭的人",
+    "如何证明你的实力，<br/>住酒店一定要选隔音最好的"
+    ];
+
+    var shareTitle = '';
+    var shareUrl   = '';
+    var shareDesc  = '';
+    var shareImg   = '';
+    var select = datar[Math.floor(datar.length*Math.random())];
+    $(".content").html(select)
+	
+    getId("url")?$(".btn-play").attr("href",getId("url")):"";
+	
+    function getId(name){
+        if(location.href.indexOf("?")>=0){
+            var url = location.href.split("?")[1].split("&");
+            var text = "";
+            for(var i=0;i<url.length;i++){
+                var id= location.href.split("?")[1].split("&")[i].indexOf("=");
+                var nick = location.href.split("?")[1].split("&")[i].substring(0,id);
+                if(name== nick){
+                    text = location.href.split("?")[1].split("&")[i].substring(id+1)
+                }
+            }
+            return text;
+        }else{
+            return "";
+        }
+    }
+</script>
+<script type="application/javascript">
+    $(function ()
+    {
+        //图片自适应
+        var btnW = $(window).width() / (640 / 340);
+        var btnH = btnW / (340 / 70);
+		 //var btnW = 200;
+        //var btnH = 50;
+        $('.btn').width(btnW).height(btnH);
+        $('.btn-play').css({
+            'margin-top' : $(window).width() / (640 / 50)
+        });
+
+        $('.btn-group').css({
+            'display' : 'block',
+            'bottom'  : $(window).width() / (640 / 160)
+        });
+        //复制内容到粘贴板
+        $('.btn-copy').on('click', function ()
+        {
+            new Clipboard('.btn', {
+                text : function ()
+                {
+                    return select.replace(/<br\/>/g,"");
+                }
+            });
+            //$(this).toggleClass('btn-copy-click');
+            setTimeout(function ()
+            {
+                alert("已复制");
+            }, 300);
+        });
+
+        $('.btn-play').on('click', function ()
+        {
+            //$(this).toggleClass('btn-play-click');
+                        window.location.href="play.html";
+            
+        });
+        $('.close').on('click', function (){
+            $(".guan").hide();
+        });
+
+    });
+</script>
+
+
+</body></html>

@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding:0;
+}
+.content-outer{
+    width:100%;
+    heightf:400px;
+    padding: 50px 0;
+    display: flex;
+}
+.content{
+    margin: auto;
+    width: 80%;
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+    line-height: 36px;
+}
+.btn-group{
+    width:100%;
+    display:none;
+    text-align:center;
+    fposition:fixed;
+    bottom:10px;
+}
+.btn{
+    display:block;
+    background-size:100% !important;
+    margin:auto;
+}
+
+.btn-copy{
+    background:url(./cope_.png) no-repeat;
+}
+.btn-copy-click{
+    background:url(./cope.png) no-repeat;
+}
+.btn-play{
+    background:url(./play_.png) no-repeat;
+}
+.btn-play-click{
+    background:url(./play.png) no-repeat;
+}
