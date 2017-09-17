@@ -235,14 +235,24 @@ p {
   }
 
 .navbar-default .navbar-brand {
-	padding-top: 5px;
+	padding-top: 0px;
 	color: #111111;
 	-webkit-transition: 200ms;
 	-moz-transition: 200ms;
 	-o-transition: 200ms;
 	transition: 200ms;
 }
-
+.navbar-default .navbar-audio {
+	padding-top: 40px;
+	padding-right:0px;
+	margin-left:-10px;
+	padding-left:0px;
+	color: #111111;
+	-webkit-transition: 200ms;
+	-moz-transition: 200ms;
+	-o-transition: 200ms;
+	transition: 200ms;
+}
 .navbar-default .navbar-brand:hover {
   transition: 1s;
 }
@@ -2148,7 +2158,7 @@ font-size: 12px;
 		font-size: 37px;
 	}
 .second {
-padding: 120px 10px 50px 350px;
+padding: 10px 10px 50px 10px;
 }
 
 	.pricing {
