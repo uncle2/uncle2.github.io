@@ -26,11 +26,14 @@
         <div class="navbar-header page-scroll">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
           <a class="navbar-brand page-scroll" href="#main"><img src="images/puq.gif" width="40" height="40" alt="iLand" /></a> 
-		  <audio id="bgm" controls="controls" autoplay="autoplay" loop="loop" class="navbar-audio page-scroll">
+		  <audio id="audioBgm"  autoplay="autoplay" loop="loop" class="navbar-audio page-scroll">
 
   <source src="audio/forest.mp3" type="audio/mpeg" />
 Your browser does not support the audio element.
 </audio>
+<!--
+<input id="playBt" type="image" src="images/stop.png" width=40px hight=40px onclick="playFt()"></input>
+-->
 		  </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
@@ -357,6 +360,7 @@ Your browser does not support the audio element.
     <!-- Scroll To Top --> 
     
     <a id="back-top" class="back-to-top page-scroll" href="#main"> <i class="ion-ios-arrow-thin-up"></i> </a> 
+	<input id="playBt" class="play-button page-scroll" type="image" border=0px src="images/stop.png" width=40px hight=40px onclick="playFt()"></input>
     
     <!-- Scroll To Top Ends--> 
     
@@ -378,6 +382,22 @@ Your browser does not support the audio element.
 myVid=document.getElementById("bgm");
 myVid.volume=0.1;
 
+function playFt(){
+var audio=document.getElementById("audioBgm");
+var playBt=document.getElementById("playBt");
+if(playBt.value=="播放"){
+audio.play();
+audio.loop=true;
+playBt.value="暂停";
+playBt.src="images/stop.png";
+
+}
+else{
+audio.pause();
+playBt.value="播放";
+playBt.src="images/play.png";
+}
+}
 </script> 
 
 </body>

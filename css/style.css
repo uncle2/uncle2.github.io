@@ -2275,3 +2275,21 @@ padding: 10px 10px 50px 10px;
 /*---------------------------------------------------
 ------- Media Queries for Split Layout Ends ---------
 ---------------------------------------------------*/
+
+
+
+.play-button {
+
+	margin: 0;
+	position: fixed;
+	bottom: 30px;
+	left:30px;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	z-index: 90;
+	border:none;
+	outline:medium;
+	text-decoration: none;
+	color: #0E1729;
+}
